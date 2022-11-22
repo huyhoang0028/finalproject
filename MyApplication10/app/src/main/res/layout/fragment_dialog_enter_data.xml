@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/background_white_conner_16"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_yellow_conner_16_top_left_right"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Enter Your Data"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Please send your all trips information"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_white_conner_gray"
+                    android:hint="Your Name (*)"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/bussiness_trip_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_white_conner_gray"
+                    android:hint="Business trip name"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_white_conner_gray"
+                    android:hint="Destination (*)"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_white_conner_gray"
+                    android:hint="Date (*)"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="Risk assessment"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/riskAssessment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text="Yes"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:checked="false"
+                        android:paddingLeft="10dp"
+                        android:text="No"></RadioButton>
+
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_white_conner_gray"
+                    android:hint="Description"
+                    android:padding="12dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_close"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#BCAFAF"
+                        android:text="Close"
+                        android:textSize="14sp">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/yellow"
+                        android:paddingLeft="10dp"
+                        android:text="Send"
+                        android:textSize="14sp"></Button>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

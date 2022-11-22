@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddExpenseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textviewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_yellow_conner_16_top_left_right"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Enter Your Expense"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerTypeOfCost" />
+
+        <Spinner
+            android:id="@+id/spinnerTypeOfCost"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="Type of Cost"
+
+            android:contentDescription="@string/label_type"
+            app:layout_constraintEnd_toEndOf="@+id/textviewContent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewContent" />
+
+        <EditText
+            app:layout_constraintStart_toEndOf="@+id/spinnerTypeOfCost"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTypeOfCost"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTypeOfCost"
+            android:id="@+id/expense"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_white_conner_gray"
+            android:hint="Expense (*)"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:id="@+id/fmRequestCreateLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerTypeOfCost"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/expense"
+            app:layout_constraintTop_toBottomOf="@+id/expense">
+
+            <EditText
+                android:id="@+id/addDate"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/background_white_conner_gray"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:ems="10"
+                android:hint="@string/label_date"
+                android:inputType="date"
+                android:textSize="17sp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/addTime"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/background_white_conner_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:ems="10"
+                android:hint="@string/label_time"
+                android:inputType="time"
+                android:textSize="17sp"
+                android:autofillHints="" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addAdditionalComment"
+            android:padding="12dp"
+            android:background="@drawable/background_white_conner_gray"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/label_content"
+            android:inputType="textMultiLine"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmRequestCreateLinearLayout"
+            app:layout_constraintStart_toStartOf="@+id/fmRequestCreateLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fmRequestCreateLinearLayout" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:backgroundTint="#BCAFAF"
+            android:layout_width="165dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/label_cancel"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/addAdditionalComment"
+            app:layout_constraintTop_toBottomOf="@+id/addAdditionalComment" />
+
+        <Button
+            android:id="@+id/addExpense"
+            android:backgroundTint="@color/yellow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:text="ADD EXPENSE"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="@+id/addAdditionalComment"
+            app:layout_constraintStart_toEndOf="@+id/cancel"
+            app:layout_constraintTop_toTopOf="@+id/cancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

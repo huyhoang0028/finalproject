@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "381377910694",
+    "project_id": "fir-cf74f",
+    "storage_bucket": "fir-cf74f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381377910694:android:f0e40aa20deef889622167",
+        "android_client_info": {
+          "package_name": "vn.edu.greenwich.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381377910694-6pu9memu073lbmlik7akm946ludo45bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB718S74eds8-MGVVg7sJJJLADNlfDTOOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381377910694-6pu9memu073lbmlik7akm946ludo45bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

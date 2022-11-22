@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nav_table_view"
+            android:title="@string/nav_table"
+            android:icon="@drawable/ic_table_view"/>
+        <item
+            android:id="@+id/nav_inf"
+            android:title="Information"
+            android:icon="@drawable/ic_info"/>
+    </group>
+    <item android:title="@string/nav_account">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="Setting"
+                android:icon="@drawable/ic_management"/>
+            <item
+                android:id="@+id/nav_date"
+                android:title="Date"
+                android:icon="@drawable/ic_date_range"/>
+            <item
+                android:id="@+id/nav_describe"
+                android:title="Describes"
+                android:icon="@drawable/ic_description"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+<!--            <TextView-->
+<!--                android:id="@+id/id_txt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1"-->
+<!--                android:textSize="40sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#000"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/showTypeOfCost"
+                android:layout_width="115dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+                android:text="Type Of Cost"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="15dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/showDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="@+id/showTypeOfCost"
+                app:layout_constraintTop_toBottomOf="@+id/showTypeOfCost" />
+
+            <TextView
+                android:id="@+id/showExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:text="Expense"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/showTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_marginTop="6dp"
+                app:layout_constraintEnd_toEndOf="@+id/showTypeOfCost"
+                app:layout_constraintTop_toBottomOf="@+id/showTypeOfCost" />
+
+            <TextView
+                android:id="@+id/showAdditionalComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="AdditionalComment"
+                app:layout_constraintEnd_toEndOf="@+id/showTime"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/showDate"
+                app:layout_constraintTop_toBottomOf="@+id/showTypeOfCost" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

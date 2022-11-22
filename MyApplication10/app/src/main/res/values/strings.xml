@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_table">Table</string>
+    <string name="nav_info">Information</string>
+    <string name="nav_account">Management</string>
+    <string name="nav_describe">Describes</string>
+    <string name="nav_date">Date</string>
+    <string name="nav_drawer_open">Open navigation</string>
+    <string name="nav_drawer_close">Close navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_type">Type</string>
+    <string-array name="label_typeOfCost">Type
+        <item>Travel</item>
+        <item>Food</item>
+        <item>Installation</item>
+        <item>Repair</item>
+        <item>Invoice</item>
+    </string-array>
+
+    <string name="label_date">Date</string>
+    <string name="label_time">Time</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_content">Additional Comments</string>
+    <string name="label_add_request">Add Request</string>
+
+    <string name="error_blank_name">Name cannot be blank.</string>
+    <string name="error_blank_destination">Starting Date cannot be blank.</string>
+
+
+</resources>
